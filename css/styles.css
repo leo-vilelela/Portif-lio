@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    --cor-primaria: #161b22;
+    --cor-secundaria: #22272d;
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 767px){
+    body{
+        background-image: linear-gradient(to bottom right, black, #000044);
+    }
+    main{
+        display: flex;
+        flex-wrap:wrap;
+    
+    }
+    p{
+        padding: 15px;
+    }
+    
+    
+    aside{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sobre-mim{
+        display: flex;
+        text-align:left;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 20px;
+        /* background-color: var(--cor-secundaria); */
+        background-image: linear-gradient(to bottom right, black, #000044);
+    }
+    
+    .card img{
+        border-radius: 18px;
+        width: 180px;
+        
+    }
+    
+    .aside{
+        padding: 15px;
+        margin: 0 20px 0 0;
+        text-align: center;
+    }
+    
+    .bio{
+        padding: 10px;
+    }
+    .aside img{
+        width: 170px;
+        border-radius: 50%;
+        border: 4px solid var(--cor-secundaria);
+    }
+
+    .aside img:hover{
+        box-shadow: 0px 0px 10px 10px rgb(40, 40, 125);
+    }
+    
+    .redes{
+        display: flex;
+        padding: 10px;
+        gap: 10px;
+        justify-content:flex-start
+    }
+    
+    .titulo {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0 0 0;
+    }
+    
+    .intro {
+        display: flex;
+        background-color: var(--cor-secundaria);
+        justify-content: center;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 20px;
+    }
+    
+    .networking {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card {
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        width: 200px;
+        height: 350px;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 20px;
+        background-color: var(--cor-secundaria);
+        color: rgb(191, 136, 64);
+        font-size:12px
+    }
+    
+    .float-button{
+        position:fixed;
+        top: 60px;
+        right: 30px;
+    }
+
+    .tecnologias{
+        padding: 30px;
+        margin: 20px;
+        border: 10px solid var(--cor-secundaria);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-image: linear-gradient(to bottom right, rgb(32, 192, 174), #1d1d81);
+    }
+
+    .tecnologias img{
+        width: 200px;
+    }
+    .videos{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    iframe{
+        margin: 20px;
+        border: 4px inset var(--cor-secundaria);
+        width: 100%;
+    }
+    
+    footer{
+        border-top: 2px solid #22272d;
+    }
+}
+
+/*Configurações para telas grandes */
+/* 
+@media screen and (min-width: 601px){
+    
+    body{
+        background-image: linear-gradient(to bottom right, black, #000044);
+    }
+    main{
+        display: flex;
+        flex-wrap:nowrap;
+    
+    }
+    p{
+        padding: 15px;
+    }
+        
+    aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .central{
+        display: block;
+    }
+
+    .apresentação{
+        display: flex;
+    }
+
+    .sobre-mim{
+        display: flex;
+        text-align: justify;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 20px;
+        background-color: var(--cor-secundaria);
+    }
+    
+    .card img{
+        border-radius: 18px;
+        width: 180px;
+        
+    }
+
+    .aside{
+        padding: 15px;
+        margin: 0 20px 0 0;
+        text-align: center;
+    }
+    
+    .bio{
+        padding: 10px;
+    }
+    .aside img{
+        width: 170px;
+        border-radius: 50%;
+        border: 4px solid var(--cor-secundaria);
+    }
+
+    aside img:hover{
+        box-shadow: 0px 0px 10px 10px rgb(40, 40, 125);
+    }
+    .redes{
+        display: flex;
+        padding: 10px;
+        gap: 10px;
+        justify-content:flex-start
+    }
+    
+    .titulo{
+        display: flex;
+        justify-content: center;
+        padding: 20px 0 0 0;
+    }
+    
+    .intro {
+        display: flex;
+        background-color: var(--cor-secundaria);
+        justify-content: center;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 20px;
+    }
+    
+    .networking {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card {
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        width: 200px;
+        height: 350px;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 20px;
+        background-color: var(--cor-secundaria);
+        color: rgb(191, 136, 64);
+        font-size:12px
+    }
+
+    .card:hover{
+        box-shadow: 0px 0px 10px 10px rgb(40, 40, 125);
+    }
+
+
+    
+    .float-button{
+        position:fixed;
+        top: 60px;
+        right: 30px;
+    }
+
+    .float-button:hover{
+        box-shadow: 0px 0px 5px 5px greenyellow;
+        border-radius: 50%;
+        background-color: bisque;
+    }
+
+    .tecnologias{
+        padding: 30px;
+        margin: 20px;
+        border: 10px solid var(--cor-secundaria);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-image: linear-gradient(to bottom right, rgb(32, 192, 174), #1d1d81);
+    }
+
+    .tecnologias img{
+        width: 200px;
+    }
+
+    .videos{
+        padding: 20px;
+        margin: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    iframe{
+        margin: 20px;
+        border: 4px inset var(--cor-secundaria);
+    }
+
+    footer{
+        border-top: 2px solid #22272d;
+    }
+} */
+
+
