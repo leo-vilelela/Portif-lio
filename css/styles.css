@@ -10,8 +10,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     text-decoration: none;
-    --cor-primaria: #161b22;
-    --cor-secundaria: #22272d;
+    --cor-primaria: #22272d;
     scroll-behavior: smooth;
 }
 
@@ -66,7 +65,7 @@
     .lateral img {
         width: 170px;
         border-radius: 50%;
-        border: 4px solid var(--cor-secundaria);
+        border: 4px solid var(--cor-primaria);
     }
 
     .lateral img:hover {
@@ -89,7 +88,7 @@
 
     .intro {
         display: flex;
-        background-color: var(--cor-secundaria);
+        background-color: var(--cor-primaria);
         justify-content: center;
         padding: 10px;
         margin: 20px;
@@ -114,7 +113,7 @@
         flex-direction: column;
         gap: 10px;
         border-radius: 20px;
-        background-color: var(--cor-secundaria);
+        background-color: var(--cor-primaria);
         color: rgb(191, 136, 64);
         font-size: 12px
     }
@@ -132,7 +131,7 @@
     .tecnologias {
         padding: 30px;
         margin: 20px;
-        border: 10px solid var(--cor-secundaria);
+        border: 10px solid var(--cor-primaria);
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -154,11 +153,11 @@
 
     iframe {
         margin: 20px;
-        border: 4px inset var(--cor-secundaria);
+        border: 4px inset var(--cor-primaria);
         width: 100%;
     }
 
     footer {
-        border-top: 2px solid #22272d;
+        border-top: 2px solid var(--cor-primaria);
     }
 }
