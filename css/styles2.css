@@ -1,35 +1,36 @@
-
 /*Configurações para telas grandes */
 
-@media screen and (min-width: 601px){
-    
-    body{
+@media screen and (min-width: 601px) {
+
+    body {
         background-image: linear-gradient(to bottom right, black, #000044);
     }
-    main{
+
+    main {
         display: flex;
-        flex-wrap:nowrap;
-    
+        flex-wrap: nowrap;
+
     }
-    p{
+
+    p {
         padding: 15px;
     }
-        
-    aside{
+
+    aside {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
     }
-    
-    .central{
+
+    .central {
         display: block;
     }
 
-    .apresentação{
+    .apresentação {
         display: flex;
     }
 
-    .sobre-mim{
+    .sobre-mim {
         display: flex;
         text-align: justify;
         padding: 20px;
@@ -37,44 +38,46 @@
         border-radius: 20px;
         background-image: linear-gradient(to bottom right, black, #000044);
     }
-    
-    .card img{
+
+    .card img {
         border-radius: 18px;
         width: 180px;
-        
+
     }
 
-    .aside{
+    .aside {
         padding: 15px;
         margin: 0 20px 0 0;
         text-align: center;
     }
-    
-    .bio{
+
+    .bio {
         padding: 10px;
     }
-    .aside img{
+
+    .aside img {
         width: 170px;
         border-radius: 50%;
         border: 4px solid var(--cor-secundaria);
     }
 
-    aside img:hover{
+    aside img:hover {
         box-shadow: 0px 0px 10px 10px rgb(40, 40, 125);
     }
-    .redes{
+
+    .redes {
         display: flex;
         padding: 10px;
         gap: 10px;
-        justify-content:flex-start
+        justify-content: flex-start
     }
-    
-    .titulo{
+
+    .titulo {
         display: flex;
         justify-content: center;
         padding: 20px 0 0 0;
     }
-    
+
     .intro {
         display: flex;
         background-color: var(--cor-secundaria);
@@ -83,14 +86,14 @@
         margin: 20px;
         border-radius: 20px;
     }
-    
+
     .networking {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
-    
+
     .card {
         margin: 10px;
         padding: 10px;
@@ -104,28 +107,28 @@
         border-radius: 20px;
         background-color: var(--cor-secundaria);
         color: rgb(191, 136, 64);
-        font-size:12px
+        font-size: 12px
     }
 
-    .card:hover{
+    .card:hover {
         box-shadow: 0px 0px 10px 10px rgb(40, 40, 125);
     }
 
 
-    
-    .float-button{
-        position:fixed;
+
+    .float-button {
+        position: fixed;
         top: 60px;
         right: 30px;
     }
 
-    .float-button:hover{
+    .float-button:hover {
         box-shadow: 0px 0px 5px 5px greenyellow;
         border-radius: 50%;
         background-color: bisque;
     }
 
-    .tecnologias{
+    .tecnologias {
         padding: 30px;
         margin: 20px;
         border: 10px solid var(--cor-secundaria);
@@ -135,11 +138,11 @@
         background-image: linear-gradient(to bottom right, rgb(32, 192, 174), #1d1d81);
     }
 
-    .tecnologias img{
+    .tecnologias img {
         width: 200px;
     }
 
-    .videos{
+    .videos {
         padding: 20px;
         margin: 20px;
         display: flex;
@@ -147,12 +150,12 @@
         flex-wrap: wrap;
     }
 
-    iframe{
+    iframe {
         margin: 20px;
         border: 4px inset var(--cor-secundaria);
     }
 
-    footer{
+    footer {
         border-top: 2px solid #22272d;
     }
 }
