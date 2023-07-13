@@ -12,6 +12,7 @@
     text-decoration: none;
     --cor-primaria: #22272d;
     scroll-behavior: smooth;
+    transition:300ms ease-out;
 }
 
 @media screen and (max-width: 767px) {
@@ -70,7 +71,7 @@
 
     .lateral img:hover {
         transform: scale(1.1);
-        transition: 500ms linear ;
+        transition: 300ms linear ;
     }
 
     .redes {
